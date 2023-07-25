@@ -1,0 +1,27 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset class="title-field">
+            {{ form.title.label }}
+            {{ form.title(class='form-control', placeholder='Title') }}
+        </fieldset>
+        <fieldset class="author-field">
+            {{ form.author.label }}
+            {{ form.author(class='form-control', placeholder='Author') }}
+        </fieldset>
+        <fieldset class="cover-field">
+            {{ form.cover.label }}
+            {{ form.cover(class='form-control', placeholder='Cover') }}
+        </fieldset>
+        <fieldset class="genre-field">
+            {{ form.genre.label }}
+            {{ form.genre(class='form-control', placeholder='Genre') }}
+        </fieldset>
+        <fieldset class="release_date-field">
+            {{ form.release_date.label }}
+            {{ form.release_date(class='form-control', placeholder='Year of Release') }}
+        </fieldset>
+
+        {{ form.submit_ button(class='btn btn-primary btn-block mt-2') }}
+    </div>
+</form>
